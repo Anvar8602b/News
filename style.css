@@ -22,7 +22,7 @@ h1 {
  
 .news{
     background-color: #b4d8d5;
-    padding: 50px 0px 32px;
+    padding: 50px 500px 32px 500px;
 }
  
 article {
@@ -47,6 +47,8 @@ article h2 {
  .article-meta {
     color: rgba(76, 94, 82, 0.726);
     margin-bottom: 5px;
+    position: relative;   
+    left: 65%;
  }
 
  article img {
@@ -80,3 +82,16 @@ text-transform: uppercase;
     color: rgb(46, 17, 17);
     font-family: 'Times New Roman', Times, serif;
 }
+
+.new ::before {
+    content: "New.";
+    color: rgb(182, 61, 61);
+  }
+
+li:nth-child(even){
+    background-color: rgba(136, 138, 36, 0.199);
+    padding: 20px;
+}
+.nobullet {
+    list-style-type: none;
+  }
